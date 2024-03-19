@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club/Committee Webpage</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        /* Add your CSS styles here */
+        .club-container {
+            text-align: center;
+        }
+        .club-photo {
+            width: 20%;
+            height: auto;
+        }
+
+        .vision-statement,
+        .mission-statement,
+        .objectives {
+            text-align: left;
+            margin-top: 15px;
+            margin-left: 40px;
+        }
+      table{
+        border-collapse:collapse ;
+        width: 30%;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-right: 1px;
+      }
+      .title p{
+        font-weight: bold;
+        font-size: 26px; 
+        margin: 0; 
+        text-align: left; 
+        margin-left: 10px; 
+      }
+      .header {
+            display:grid;
+            height:fit-content;
+            background-color: transparent;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .navbar {
+            background-color: #33333300;
+            overflow: hidden;
+            text-align: right; /* Align menu to the right */
+            margin-right: 4%;
+            margin-top: -73px;
+        }
+
+        .navbar a {
+            display: inline-block; /* Display menu items as inline-block for proper alignment */
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #000000dc;
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+        }
+
+        .navbar .icon {
+            display: none;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .logo {
+            width: 100px;
+        }
+
+        .logo img {
+            width: 250px;
+            height: 100px;
+            margin-left: 20%;
+            margin-top: 3px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .navbar a {
+                display: none;  
+            }
+            .navbar{
+                margin-top: -50px;
+            }
+       
+            .navbar a:hover {
+                background-color: transparent;
+                color: black;
+            }
+
+            .navbar a.icon {
+                display:block;
+                text-align: left;
+            }
+
+            .navbar.responsive {
+                position:static;
+
+            }
+
+            .navbar.responsive a.icon {
+                position: relative;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                display: flex;
+                flex-wrap:wrap;
+                text-align: left;
+            }
+            .logo{
+                width: 100px;
+                height: 50px;
+                margin-left: 5%;
+            }
+            .logo img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/273eca_ef26c7f35aca4d64ae4d0d6d74f74927~mv2.png" alt="logo">
+        </div>
+
+        <div class="navbar" id="myNavbar">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <a href="">Home</a>
+            <a href="">Clubs</a>
+            <a href="">Faculty</a>
+            <a href="">Placement</a>
+            <a href="">Login</a>
+        </div>
+    </div>
+    <div class="club-container">
+        <!-- Club/Committee Name -->
+        <h1>Manthan Club</h1>
+        
+        <!-- Club/Committee Photo -->
+        <img src="https://static.wixstatic.com/media/273eca_12a5f901815a40d1830d1bdba9d392f4~mv2.png" alt="Club/Committee Photo" class="club-photo">
+        
+        <!-- Club/Committee Details -->
+  
+
+            <!-- Vision Statement -->
+            <div class="vision-statement">
+                <h2>VISION STATEMENT</h2>
+                <p>The Manthan Club at NMIMS, Navi Mumbai strives to engage and inspire diverse passionate students by providing them a platform to showcase their ideas with skills and simultaneously adapting to the latest tools and technologies, thus making projects that will give them, as well as the world a future vision.</p>
+            </div>
+
+            <!-- Mission Statement -->
+            <div class="mission-statement">
+                <h2>MISSION STATEMENT</h2>
+                <p>Organizing sessions related to the project topics so that students have a better idea and knowledge regarding the assignments they will work on and improve the skills needed to establish values that will help to act with thoughtfulness.</p>
+            </div>
+
+            <!-- Objectives -->
+            <div class="objectives">
+                <h2>OBJECTIVES</h2>
+                <ul>
+                    <li>Guide and provide assistance wherever needed to students so that they are able to complete their projects in the time frame.</li>
+                    <li>To make projects compatible with the ongoing trends in the technology and participate in the main as well as other colleges fests and competitions.</li>
+                    <li>Hold exhibitions to showcase the projects.</li>
+                </ul>
+            </div>
+            <br>
+            <p style="font-weight: bold;font-size: 26px;margin: 0;text-align: left;margin-left: 40px; ">Core Members</p>
+            <br>
+            <table border="1" cellspacing="23" cellpadding="18">
+                <tr style="text-align: center;">
+                    <td>Name</td>
+                    <td>Position</td>
+                </tr>
+                <tr style="text-align: left;">
+                    <td>● Vedangi Phapale</td>
+                    <td>Head</td>
+                </tr>
+                
+                <tr style="text-align: left;">
+                    <td>● Aban Qureshi</td>
+                    <td>Co-Head</td>
+                </tr>
+            </table>
+            <br><br>
+            <p style="font-weight: bold;font-size: 26px;margin: 0;text-align: left;margin-left: 40px; ">Faculty Incharge</p>
+            <br>
+            <table border="1" cellspacing="23" cellpadding="18">
+                <tr style="text-align: center;">
+                    <td>Name</td>
+                    <td>Position</td>
+                </tr>
+                <tr style="text-align: left;">
+                    <td>● Prof. Aditya Kasar</td>
+                    <td>Faculty Mentor</td>
+                </tr>
+                
+                <tr style="text-align: left;">
+                    <td>● Dr. Aarti Sharma</td>
+                    <td>Executive Member</td>
+                </tr>
+                
+                <tr style="text-align: left;">
+                    <td>● Prof. Divyang Jadhav</td>
+                    <td>Faculty Mentor</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        </script>
+</body>
+</html>
+
