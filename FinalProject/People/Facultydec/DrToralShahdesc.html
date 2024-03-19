@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            size: 100%;
+            background-image:url("https://c4.wallpaperflare.com/wallpaper/812/890/515/blue-sky-white-clouds-green-grass-trees-desktop-landscape-nature-wallpaper-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size:250%;
+        }
+
+       
+        .faculty-container {
+            position: relative;
+            max-width:70% ;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 3%;
+            padding: 10vh;
+        }
+
+        .faculty-photo {
+            position: relative;
+            width: 300px;
+            height: auto;
+            left:5px;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            filter: drop-shadow(1px 0 10px black);
+            background-size: cover;
+            transition: all 2s;
+        }
+        .faculty-photo:hover{
+            box-shadow: 0px 0px 100px #0099ff;
+            border-radius: 0% 100% 0% 100% / 86% 13% 87% 14% ;
+        }
+       
+
+        .faculty-info {
+            position: absolute;
+            background:linear-gradient(45deg,rgb(255, 255, 255),rgba(255, 255, 255, 0.682));
+            text-align: left;
+            left: 34%;
+            top: 13%;
+            padding: 4%;
+            font-size: 20px;
+        }
+       .faculty-info a:hover{
+        color: blueviolet;
+       }
+
+        .faculty-info h2 {
+            margin-bottom: 30px;
+            text-decoration: underline;
+
+        }
+
+        .faculty-info p {
+            margin-top:5px;
+            margin-right:5px;
+            margin-bottom:5px;
+        }
+        .faculty-info span{
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .faculty-info a{
+            color: blue;
+        }
+        .navbar {
+            background-color: #33333300;
+            overflow: hidden;
+            text-align: right; /* Align menu to the right */
+            margin-right: 4%;
+            margin-top: 30px;
+        }
+
+        .navbar a {
+            display: inline-block; /* Display menu items as inline-block for proper alignment */
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #afaaaadc;
+            color: black;
+            border-radius: 20px;
+        }
+
+        .navbar .icon {
+            display: none;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 1024px) {
+            body{
+                background-size: 550%;
+            }
+            .navbar a {
+                display: none;
+                
+            }
+            .navbar a:hover {
+            background-color:transparent;
+            }
+
+            .navbar a.icon {
+                display: block;
+                text-align: left;
+            }
+
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive a.icon {
+                position: relative;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                display:flex;
+                flex-wrap: wrap;
+                float: left;
+                text-align: left;
+            }
+        }
+        @media screen and (max-width: 1024px)and (min-width:768px){
+            *{
+                font-size: 20px;
+            }
+            .faculty-info{
+                position: relative;
+                left: 5px;
+                top: 2px;
+            }
+            .faculty-info h2{
+                margin-bottom: 15px;
+            }
+            .faculty-photo{
+                margin-bottom: 10px;
+            }
+            .faculty-container{
+                padding: 5vh;
+            }
+        }
+        @media screen and (max-width:767px){
+            body{
+                background-size: 1000%;
+            }
+            *{
+                font-size: 15px;
+            }
+            .faculty-info{
+                position: relative;
+                left: 5px;
+                top: 2px;
+                width: 90%;
+            }
+            .faculty-info h2{
+                margin-bottom: 5px;
+            }
+            .faculty-photo{
+                margin-bottom: 10px;
+            }
+            .faculty-container{
+                max-width: 100%;
+             padding:0%;
+             margin-left: 2%;
+             margin-right: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="faculty-container">
+        <img class="faculty-photo" src="https://www.nmimsnavimumbai.org/images/Toral_Shah-removebg-preview.png" alt="Faculty Photo">
+        <div class="faculty-info">
+            <h2>Dr. Toral Shah</h2>
+            <p class="email"><span> Email:</span>&nbsp;<a href="mailto: toral.shah@nmims.edu">toral.shah@nmims.edu</a></p>
+            <p class="subject-teaching"><span>Subject Teaching:</span>&nbsp; 
+            <ul>
+                <li>Discrete Mathematics</li>
+                <li>Computer Organisation and Architecture</li>
+                <li>Python Programming</li>
+                <li>UNIX Programming</li>
+                <li>Microprocessors and Microcontrollers</li>
+                <li>Technical Paper Reading, and Writing Skills</li>
+            </ul></p>
+            <p class="teaching-experience"><span>Teaching Experience:</span>&nbsp; 20 Years</p>
+            <p class="service-to-university"><span>Service to University:</span>&nbsp; 
+                <ul>
+                    <li> Have played instrumental role in smooth conduction of Tech Programmes (B.Tech CE, B.Tech CSBS, B.Tech AI&DS) since September 2021
+                        <ul>
+                            <li> Recruiting, inducting, and managing visiting faculty</li>
+                            <li> Implementation of policies received from Mumbai campus</li>
+                            <li> Active participation in cross-campus coordination</li>
+                            <li> Overview of student activities</li>
+                        </ul>
+                    </li>
+                    <li>Proactive participation in teaching scheme and syllabus revision</li>
+                    <li>Conducted 2-day FDP on "LaTeX for Mathematics and Research”, January 2020</li>
+                    <li> Conducted Online Training sessions for Inhouse Faculty Development Program on:
+                        <ul>
+                            <li> LaTeX for Report Writing</li>
+                            <li> Python for Research</li>
+                        </ul>
+                    </li>
+                </ul>
+               </p>
+            <p class="research-interest"><span>Research Interest:</span>&nbsp; Data Science Applications, Delay testable synthesis ,Testable architectures , Design-for-Test ,Applications of scan based testing ,Hardware security</p>
+            <p class="recent-publication"><span>Recent Publication:</span>&nbsp; 
+            <ul>
+                <li> Journal Publication
+                    <ul>
+                        <li>  Toral Shah, Anzhela Matrosova, Masahiro Fujita, and Virendra Singh Multiple Stuck-at Fault Testability Analysis of ROBDD Based Combinational Circuit Design
+                            Journal of Electronic Testing (JETTA), (Volume 34, Number 1), February 2018, Impact factor: 0.55
+                
+                                http://link.springer.com/article/10.1007/s10836-018-5703-3</li>
+                    </ul>
+                </li>
+                <li> Conference Publications
+                    <ul>
+                        <li>Toral Shah, Mrudula Modi,
+                            Benefits of Mindfulness Meditation in Academics  first International Research
+                            Conference on Mindfulness, IIM Bodhgaya, February 2022</li>
+                        <li> Toral Shah, Anzhela Matrosova, and Virendra Singh
+                            Test Pattern Generation to Detect Multiple Faults in ROBDD based combinational Circuits
+                            23rd IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS) 2017, Greece
+                            http://ieeexplore.ieee.org/document/8046223/</li>
+                        <li> Toral Shah, Anzhela Matrosova, Binod Kumar, Masahiro Fujita, Virendra Singh
+                            Testing multiple stuck-at faults of ROBDD based combinational circuit design
+                            18th IEEE Latin American Test Symposium (LATS) 2017, Bogota, Colombia
+                             http://ieeexplore.ieee.org/document/7906753/</li>
+                        <li>  Toral Shah, Virendra Singh, Anzhela Matrosova
+                            ROBDD based Path Delay Fault testable combinational circuit design
+                            14th IEEE East-West Design and Test Symposium (EWDTS), 2016, Yerevan, Armenia                  
+                            http://ieeexplore.ieee.org/document/7807682/</li>
+                        <li> Toral Shah, Anzhela Matrosova, Virendra Singh
+                            BDD based PDF testable combinational circuit design
+                            14th IEEE Workshop on RTL and High-Level Testing (WRTLT) 2015, Mumbai, India</li>
+                        <li>  ToralShah, Anzhela Matrosova, Virendra Singh
+                            PDF testability of a combinational circuit derived by covering ROBDD nodes using Invert-And-Or circuits
+                            8th VLSI Design and Test (VDAT) 2015, Ahmedabad, India
+                            http://ieeexplore.ieee.org/document/7208130/</li>
+                        <li>   Anzhela Matrosova, E. Mitrofanov, Toral Shah
+                            Simplification of Fully Delay Testable Combinational circuits
+                            21st IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS) 2015, Halkidiki, Greece
+                            http://ieeexplore.ieee.org/document/7229829/</li>
+                        <li> 
+                            Anzhela Matrosova, E.Mitrofanov, Toral Shah
+                                   Multiple Stuck-at Fault Testability of a Combinational Circuit Derived by Covering ROBDD Nodes by Invert-And-Or Sub-circuits
+                                   13th IEEE East-West Design and Test Symposium (EWDTS) 2015, Batumi, Georgia
+                                   http://ieeexplore.ieee.org/document/7493099/</li>
+                        <li>  Prashant Singh, Toral Shah, Virendra Singh An Improved Single-Input-Change (SIC) Based Built-In-Self-Test for Delay Testing 13th IEEE Workshop on RTL and High-Level Testing (WRTLT) 2014, Hangzhou, China</li>
+                        <li> Toral Shah, Mrudula Modi Spirituality as Science: Experience is Proof
+                            8th All India Students Conference on Science and Spiritual Quest (AISSQ) 2014, IIT BHU, India 
+                            http://www.academia.edu/4908966/Spirituality_as_Science_Experience_is_Proof</li>
+                    </ul>
+                </li>
+               
+            </ul>
+           
+          
+            
+           
+            
+            
+            
+           
+            
+           
+            
+          
+            
+           
+            
+          
+            
+         
+           
+            
+          
+            
+           
+        </p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+    </script>
+</body>
+</html>

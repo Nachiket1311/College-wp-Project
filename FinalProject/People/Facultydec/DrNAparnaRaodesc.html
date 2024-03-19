@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Information</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            size: 100%;
+            background-image:url("https://c4.wallpaperflare.com/wallpaper/812/890/515/blue-sky-white-clouds-green-grass-trees-desktop-landscape-nature-wallpaper-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size:200%;
+        }
+
+       
+        .faculty-container {
+            position: relative;
+            max-width:70% ;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 3%;
+            padding: 10vh;
+        }
+
+        .faculty-photo {
+            position: relative;
+            width: 300px;
+            height: auto;
+            left:5px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            filter: drop-shadow(1px 0 10px black);
+            background-size: cover;
+            transition: all 2s;
+        }
+        .faculty-photo:hover{
+            box-shadow: 0px 0px 100px #0099ff;
+            border-radius: 0% 100% 0% 100% / 86% 13% 87% 14% ;
+        }
+       
+
+        .faculty-info {
+            position: absolute;
+            background:linear-gradient(45deg,rgb(255, 255, 255),rgba(255, 255, 255, 0.682));
+            text-align: left;
+            left: 34%;
+            top: 13%;
+            padding: 4%;
+            font-size: 20px;
+        }
+       .faculty-info a:hover{
+        color: blueviolet;
+       }
+
+        .faculty-info h2 {
+            margin-bottom: 30px;
+            text-decoration: underline;
+
+        }
+
+        .faculty-info p {
+            margin-top:5px;
+            margin-right:5px;
+            margin-bottom:5px;
+        }
+        .faculty-info span{
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .faculty-info a{
+            color: blue;
+        }
+        .navbar {
+            background-color: #33333300;
+            overflow: hidden;
+            text-align: right; /* Align menu to the right */
+            margin-right: 4%;
+            margin-top: 30px;
+        }
+
+        .navbar a {
+            display: inline-block; /* Display menu items as inline-block for proper alignment */
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #afaaaadc;
+            color: black;
+            border-radius: 20px;
+        }
+
+        .navbar .icon {
+            display: none;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 1024px) {
+            body{
+                background-size: 550%;
+            }
+            .navbar a {
+                display: none;
+                
+            }
+            .navbar a:hover {
+            background-color:transparent;
+            }
+
+            .navbar a.icon {
+                display: block;
+                text-align: left;
+            }
+
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive a.icon {
+                position: relative;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                display:flex;
+                flex-wrap: wrap;
+                float: left;
+                text-align: left;
+            }
+        }
+        @media screen and (max-width: 1024px)and (min-width:768px){
+            *{
+                font-size: 20px;
+            }
+            .faculty-info{
+                position: relative;
+                left: 5px;
+                top: 2px;
+            }
+            .faculty-info h2{
+                margin-bottom: 15px;
+            }
+            .faculty-photo{
+                margin-bottom: 10px;
+            }
+            .faculty-container{
+                padding: 5vh;
+            }
+        }
+        @media screen and (max-width:767px){
+            body{
+                background-size: 1000%;
+            }
+            *{
+                font-size: 15px;
+            }
+            .faculty-info{
+                position: relative;
+                left: 5px;
+                top: 2px;
+                width: 90%;
+            }
+            .faculty-info h2{
+                margin-bottom: 5px;
+            }
+            .faculty-photo{
+                margin-bottom: 10px;
+            }
+            .faculty-container{
+                max-width: 100%;
+             padding:0%;
+             margin-left: 2%;
+             margin-right: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="faculty-container">
+        <img class="faculty-photo" src="https://www.nmimsnavimumbai.org/images/Aprna_Rao-removebg-preview.png" alt="Faculty Photo">
+        <div class="faculty-info">
+            <h2>Dr. N. Aparna Rao</h2>
+            <p class="email"><span> Email:</span>&nbsp;<a href="mailto: aparna.rao@nmims.edu">aparna.rao@nmims.edu</a></p>
+            <p class="subject-teaching"><span>Subject Teaching:</span>&nbsp;  Business Communication, Entrepreneurship</p>
+            <p class="teaching-experience"><span>Teaching Experience:</span>&nbsp; 30 Years</p>
+            <p class="service-to-university"><span>Service to University:</span>&nbsp; Convener, Entrepreneurship Cell, Faculty In-Charge - Community Service Programme, Organised a study trip for the first year Engineering students to Vigyan Ashram, Pabal, Training sessions for Soft Skills, Group Discussions and Interview Techniques</p>
+            <p class="research-interest"><span>Research Interest:</span>&nbsp; Case Studies, Entrepreneurship and the Start-up Ecosystem, Social Impact, Grassroots Entrepreneurship, Pedagogical Methods for Higher Education</p>
+            <p class="recent-publication"><span>Recent Publication:</span>&nbsp; 
+                <ul>
+                    <li>  WICCI SBC Report on "Women in Sustainable Business in India” in partnership with UNDP’s Business Call to Action - submitted to the Ministry of Corporate Affairs, Ministry of Commerce & Industry, Ministry of Women and Child Development, Ministry of Skill Development & Entrepreneurship</li>
+                    <li>Two book chapters (blind peer-reviewed) accepted for publication in the second book of the Springer series "Responsible Leadership and Sustainable Management”</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li> "Equity and Inclusion through Craft Revival and Livelihood – A Case Study of the "Kottan Basket” of M.Rm.Rm. Cultural Foundation”</li>
+                            <li>"Women in Sustainable Business in India”</li>
+                        </ul>
+                    </li>
+                    <li>‘Building the Entrepreneurial Attitude: Learning from M.K.Gandhi,’ SIgNEture – SINE Newsletter, February 2014, Issue 2</li>
+                    <li>‘Management minus Jargon – Learning Management & Leadership from the Mahatma’s "The Story of My Experiments with Truth”,’ (2013), SASMIRA’s Business Review, December 2013, ISBN 978-81-922159-5-2</li>
+                    <li> ‘Use of Technology for a Marketing Organization,’(2012) published in the International Research Compendium – The Impact of Technology in Reshaping the Practice of Marketing, BMA & SASMIRA’s Institute of Management Studies & Research, ISBN: 978-81-922159-4-5</li>
+                    <li> ‘Learning Unfettered in the Management Classroom,’(2012) published in SASMIRA’s Business Review, Changing Trends in Business, - ISBN: 978-81-9221591-4</li>
+                    <li>‘Transparency in Leadership Communication: The Need of the Hour,’(2009) published in the book, Adult & Non-Formal Education, edited by Prof Usha Parikh, M S University, Baroda; Kalpaz Publication ISBN No. 978-81-7835-837-6</li>
+                    <li>‘Important Intangibles – Choosing the Right B-School’ (2011) in the book ‘The A List of B-Schools, published by Network 18 Publications Ltd., ISBN 9789380200361</li>
+                    <li> Classroom Management Dynamics of Student-Teacher Communication in Management Classes, Management Guru, Compendium of papers published by GNIMS, March 2011, ISBN No.978-81-910922-0-2</li>
+                    <li>‘Relevance of Communication Studies in Management Education in the Information Era’ presented at National HR Conference at GNIMS, Mumbai 15 February 2011, published in Conference Compendium, ISBN No.978-81-910922-2-6</li>
+                    <li>‘Business Communication in Management Institutions: Expectations of Students & Corporate Professionals’ presented at International Conference & Colloquium on Excellence in Research & Education, IIM, Indore, 24-28 September 2010</li>
+                </ul>
+               </p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMIMS Navi Mumbai</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-color: black;
+    }
+    header{
+        padding: 0 15px;
+        background:#ffff;
+        border-bottom-right-radius:20px;
+        border-bottom-left-radius:20px;
+
+    }
+    .logo img{
+        width:220px;
+    }
+    .menu{
+        float: right;
+        position: relative;
+        top: -60px;
+        margin-right: 10px;
+    }
+    .menu a{
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: 19px;
+    }
+    .image-scroller {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -999; /* Place the scroller behind other content */
+    }
+
+    .image-scroller img {
+        width: 100%;
+        height: auto;
+        animation: scroll 20s ease-in-out infinite; /* Adjust the animation duration as needed */
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateY(0);
+            opacity: 0.7;
+        }
+        50%{
+            transform: translateY(-100%);
+            opacity: 0.7;
+        }
+        to {
+            transform: translateY(-200%);
+            opacity: 0.7;
+        }
+    }
+
+    .content { 
+        width: fit-content;
+        max-width: 1200px;
+        background-color: #dedcdcc3;
+        backdrop-filter: blur(8px);
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 1;
+    }
+    .content hr{
+        border: 1px solid red;
+    }
+    #Announcement{
+        width:1200px ;
+        margin:0 10%;
+    }
+    #Announcement h1{
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+    text-shadow: 1px 0px 5px #ff0000;
+    background-color: #dedcdc83;
+    backdrop-filter: blur(4px);
+    color: rgb(255, 255, 255);
+    }
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/273eca_ef26c7f35aca4d64ae4d0d6d74f74927~mv2.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Clubs</a>
+            <a href="">Faculty</a>
+            <a href="">Placement</a>
+            <a href="">Login</a>
+        </div>
+    </header>
+    <div class="image-scroller">
+        <img src="https://static.wixstatic.com/media/273eca_645406713ca84eeea0d010c776197592~mv2.png" alt="Image 1">
+        <img src="https://static.wixstatic.com/media/273eca_50bd28912fdd4db18f170eb6f541d57b~mv2.png" alt="Image 2">
+        <img src="https://static.wixstatic.com/media/273eca_da1046af4beb4d35a8f6aeeb9a821f06~mv2.png" alt="Image 3">
+    </div>
+    <marquee direction="left" id="Announcement" scrollamount="10">
+        <h1>Announcement is Time table for exam is decared</h1>
+    </marquee>
+    <div class="content">
+        <h2>SVKM'S NMIMS NAVI MUMBAI CAMPUS</h2>
+        <hr>
+        <p>There are more than 5500 management institutes offering post graduate courses in management across India. Yet not even a handful figure in the Global Top 200 B-school ranking. The SVKM's NMIMS Navi Mumbai Campus is an absolute exception. SVKM's NMIMS Navi Mumbai Campus ranks among the top ten Business Schools in our country and this has been the legacy of this Premium Management Institute for decades.</p>
+        <p>NMIMS has over the last 35 years grown from a management institute offering a single product namely MBA education to a Deemed to be University offering multiple products through separate schools in Business Management, Pharmacy, Technology Management & Engineering, Hospitality, Architecture, Science, Commerce, Economics and Law. In addition to recognising seeing the need for specialist schools in varied disciplines at the headquarters in Mumbai, the parent body has also responded to the felt need for centres of excellence across the country, thereby widening the base of quality higher education. It is with this objective that we set up campuses at Shirpur, Bangalore, Hyderabad, Indore, Navi Mumbai and Dhule. SVKM’s NMIMS has established its Navi Mumbai campus to develop students into global organizational leaders who can create wealth for their organizations. The new campus at Navi Mumbai offers MBA. The admission process for the MBA is through the "NMAT” by GMAC examination followed by Group Discussion and Personal Interview.</p>
+        <p>The SVKM's NMIMS Navi Mumbai Campus is located in a natural scenic serene environment which provides an ideal atmosphere for pursuing higher education programs in management away from the noise and pollution of a metro city. SVKM's NMIMS Navi Mumbai Campus provides an idyllic environment to engage in learning and the unique distinction of gaining ringside insight to metropolitan corporate dynamics against a budding and emerging business hub.</p>
+    </div>
+</body>
+</html>

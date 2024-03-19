@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Information</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            size: 100%;
+            background-image:url("https://c4.wallpaperflare.com/wallpaper/812/890/515/blue-sky-white-clouds-green-grass-trees-desktop-landscape-nature-wallpaper-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size:200%;
+        }
+
+       
+        .faculty-container {
+            position: relative;
+            max-width:70% ;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 3%;
+            padding: 10vh;
+        }
+
+        .faculty-photo {
+            position: relative;
+            width: 300px;
+            height: auto;
+            left:5px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            filter: drop-shadow(1px 0 10px black);
+            background-size: cover;
+            transition: all 2s;
+        }
+        .faculty-photo:hover{
+            box-shadow: 0px 0px 100px #0099ff;
+            border-radius: 0% 100% 0% 100% / 86% 13% 87% 14% ;
+        }
+       
+
+        .faculty-info {
+            position: absolute;
+            background:linear-gradient(45deg,rgb(255, 255, 255),rgba(255, 255, 255, 0.682));
+            text-align: left;
+            left: 34%;
+            top: 13%;
+            padding: 4%;
+            font-size: 20px;
+        }
+       .faculty-info a:hover{
+        color: blueviolet;
+       }
+
+        .faculty-info h2 {
+            margin-bottom: 30px;
+            text-decoration: underline;
+
+        }
+
+        .faculty-info p {
+            margin-top:5px;
+            margin-right:5px;
+            margin-bottom:5px;
+        }
+        .faculty-info span{
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .faculty-info a{
+            color: blue;
+        }
+        .navbar {
+            background-color: #33333300;
+            overflow: hidden;
+            text-align: right; /* Align menu to the right */
+            margin-right: 4%;
+            margin-top: 30px;
+        }
+
+        .navbar a {
+            display: inline-block; /* Display menu items as inline-block for proper alignment */
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #afaaaadc;
+            color: black;
+            border-radius: 20px;
+        }
+
+        .navbar .icon {
+            display: none;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 1024px) {
+            body{
+                background-size: 550%;
+            }
+            .navbar a {
+                display: none;
+                
+            }
+            .navbar a:hover {
+            background-color:transparent;
+            }
+
+            .navbar a.icon {
+                display: block;
+                text-align: left;
+            }
+
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive a.icon {
+                position: relative;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                display:flex;
+                flex-wrap: wrap;
+                float: left;
+                text-align: left;
+            }
+        }
+        @media screen and (max-width: 1024px)and (min-width:768px){
+            *{
+                font-size: 20px;
+            }
+            .faculty-info{
+                position: relative;
+                left: 5px;
+                top: 2px;
+            }
+            .faculty-info h2{
+                margin-bottom: 15px;
+            }
+            .faculty-photo{
+                margin-bottom: 10px;
+            }
+            .faculty-container{
+                padding: 5vh;
+            }
+        }
+        @media screen and (max-width:767px){
+            body{
+                background-size: 1000%;
+            }
+            *{
+                font-size: 15px;
+            }
+            .faculty-info{
+                position: relative;
+                left: 5px;
+                top: 2px;
+                width: 90%;
+            }
+            .faculty-info h2{
+                margin-bottom: 5px;
+            }
+            .faculty-photo{
+                margin-bottom: 10px;
+            }
+            .faculty-container{
+                max-width: 100%;
+             padding:0%;
+             margin-left: 2%;
+             margin-right: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="faculty-container">
+        <img class="faculty-photo" src="https://www.nmimsnavimumbai.org/images/Asha%20Rawat_whitebackground.png" alt="Faculty Photo">
+        <div class="faculty-info">
+            <h2>Mrs. Asha Rawat</h2>
+            <p class="email"><span> Email:</span>&nbsp;<a href="mailto:asha.rawat@nmims.edu">asha.rawat@nmims.edu</a></p>
+            <p class="subject-teaching"><span>Subject Teaching:</span>&nbsp; Computer Networks,C++,Database Management System</p>
+            <p class="teaching-experience"><span>Teaching Experience:</span>&nbsp; 19 years</p>
+            <p class="service-to-university"><span>Service to University:</span>&nbsp; Working as an Assistant Professor at NMIMS University, Navi Mumbai Campus</p>
+            <p class="research-interest"><span>Research Interest:</span>&nbsp;Wireless Network, Machine Learning, Artificial Intelligence</p>
+            <p class="recent-publication"><span>Recent Publication:</span>&nbsp; <br><br> <b>INTERNATIONAL PUBLICATIONS:</b>
+                <ul>
+                <li>Energy and Distance Based Cluster Head Selection Technique for Optimal Network Lifetime in WSN, The Seybold Report, Vol. 7, No. 9, September 2022, pages 1500-1519</li>
+                <li>Clustering Algorithm for Energy-Efficient Wireless Sensor Network, Turkish Journal of Computer and Mathematics Education, Vol. 12, No. 5, April 2021, pages 877-884</li>
+            </ul></p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+    </script>
+</body>
+</html>

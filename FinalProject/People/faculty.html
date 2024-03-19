@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.title1 h2{
+    margin-top: 150px;
+    margin-left: 80px;
+    text-decoration: underline;
+    color: rgba(86, 86, 86, 0.889);
+}
+.column {
+  float:left;
+  width: 26%;
+  margin-bottom: 60px;
+  padding:0 10px;
+  margin-left: 60px;
+  margin-right: 10px;
+}
+.card img{
+    border-radius: 90px;
+    width: 100%;
+    
+}
+
+.column1{
+  float: left;
+  width: 27.3%;
+  margin-bottom: 60px;
+  padding:0 10px;
+  margin-left: 60px;
+  margin-right: 10px;
+}
+.visit{
+    margin-top: 90%;
+    margin-left: 75px;
+    text-decoration: underline;
+    color: rgba(86, 86, 86, 0.889);
+
+}
+.intro{
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    font-size: 23px;
+    background-color: lightgray;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 90px;
+}
+.intro p{
+    width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+            background-color: transparent;
+            overflow: hidden;
+            text-align: right; /* Align menu to the right */
+            margin-right: 4%;
+            margin-top: 30px;
+        }
+
+        .navbar a {
+            display: inline-block; /* Display menu items as inline-block for proper alignment */
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: rgba(100, 100, 100, 0.738);
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+        }
+
+        .navbar .icon {
+            display: none;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+@media screen and (max-width: 650px) {
+  *{
+    font-size: 15px;
+  }
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .column{
+    margin-left: 2%;
+  }
+  .column1{
+    width: 27.3%;
+    margin-left: 2%;
+  }
+  .title1 h1{
+    margin-left: 15px;
+  }
+  
+  .title1 h2{
+    margin-left: 15px;
+  }
+  .intro{
+    border-radius: 60px;
+  }
+  .visit{
+    margin-top: 52%;
+    margin-left: 20px;
+  }
+    .navbar a {
+      display: none;             
+ }
+    .navbar a:hover {
+      background-color:transparent;
+      color: #000;
+  }
+            .navbar a.icon {
+                display: block;
+                text-align: left;
+            }
+
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive a.icon {
+                position: relative;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                display:flex;
+                flex-wrap: wrap;
+                float: left;
+                text-align: left;
+            }
+}
+@media screen and (max-width: 435px){
+.column1{
+  width: 100%;
+}
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a> 
+  </div>
+<div class="intro">
+    <p>NMIMS is a well-known private university in India, offering a variety of undergraduate, postgraduate, and doctoral programs in fields such as management, engineering, commerce, science, and more. The faculty at NMIMS Navi Mumbai campus comprises experienced and qualified professionals from diverse backgrounds, contributing to the academic and research excellence of the institution.</p>
+    <p>The faculty members are typically chosen for their expertise in their respective fields, and many of them hold advanced degrees and have practical industry experience. They play a crucial role in shaping the learning experiences of students, combining theoretical knowledge with real-world applications.</p>
+    <br><br>
+    <a href="#Core-Faculty" >See Our Core Faculty</a>
+    <br><br>
+    <a href="#Visiting-Faculty" >See Our Visiting Faculty</a>
+</div>
+<div class="title1">
+<h2>Core Faculty <a name="Core-Faculty"></a></h2>
+</div>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://www.nmimsnavimumbai.org/images/Aditya Kasar.jpeg" alt="Jane">
+      <div class="container">
+        <h2>Mr. Aditya Suresh Kasar</h2>
+        <p class="title">Assistant Professor School of Technology, Management & Engineering</p>
+        <p>aditya.kasar@nmims.edu</p>
+        <p><a href="Facultydec\MrAdityaSureshKasardesc.html"><button class="button">View Profile</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.nmimsnavimumbai.org/images/tejaswaini.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Ms. Tejaswini J. Chavan</h2>
+        <p class="title">Assistant Professor School of Technology, Management & Engineering</p>
+        <p>tejaswini.chavan@nmims.edu</p>
+        <p><a href="Facultydec\MsTejaswiniJChavandesc .html"><button class="button">View Profile</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://www.nmimsnavimumbai.org/images/Toral_Shah-removebg-preview.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Dr. Toral Shah</h2>
+        <p class="title">Assistant Professor School of Technology, Management & Engineering</p>
+        <p>toral.shah@nmims.edu</p>
+        <p><a href="Facultydec\DrToralShahdesc.html"><button class="button">View Profile</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="column">
+    <div class="card">
+      <img src="https://www.nmimsnavimumbai.org/images/Yogesh%20Jadhav.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Dr. Yogesh Jadhav</h2>
+        <p class="title">Assistant Professor School of Technology, Management & Engineering</p>
+        <p>yogesh.jadhav@nmims.edu</p>
+        <p><a href="Facultydec\DrYogeshJadhavdesc.html"><button class="button">View Profile</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://www.nmimsnavimumbai.org/images/Asha%20Rawat_whitebackground.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Mrs. Asha Rawat</h2>
+        <p class="title">Assistant Professor School of Technology, Management & Engineering</p>
+        <p>asha.rawat@nmims.edu</p>
+        <p><a href="Facultydec\MrsAshaRawatdesc.html"><button class="button">View Profile</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="column">
+  <div class="card">
+    <img src="https://www.nmimsnavimumbai.org/images/Sandip%20Bankar.png" alt="John" style="width:100%">
+    <div class="container">
+      <h2>Dr. Sandip Bankar</h2>
+      <p class="title">Assistant Professor School of Technology, Management & Engineering</p>
+      <p> bankar.sandip@nmims.edu</p>
+      <p><a href="Facultydec\DrSandipBankardesc.html"><button class="button">View Profile</button></a></p>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+  <div class="card">
+    <img src="https://www.nmimsnavimumbai.org/images/Aprna_Rao-removebg-preview.png" alt="Mike" style="width:100%">
+    <div class="container">
+      <h2>Dr. N. Aparna Rao</h2>
+      <p class="title">Assistant Professor School of Technology, Management & Engineering</p>
+      <p>aparna.rao@nmims.edu</p>
+      <p><a href="Facultydec\DrNAparnaRaodesc.html"><button class="button">View Profile</button></a></p>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+  <div class="card">
+    <img src="https://www.nmimsnavimumbai.org/images/preeti.jpg" alt="John" style="width:100%">
+    <div class="container">
+      <h2>Ms. Preeti Agarwal</h2>
+      <p class="title">Assistant Professor School of Technology, Management & Engineering</p>
+      <p>preeti.agarwal@nmims.edu</p>
+      <p><a href="Facultydec\MsPreetiAgarwaldesc.html"><button class="button">View Profile</button></a></p>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<h2 class="visit">Visiting Faculty <a name="Visiting-Faculty"></a></h2>
+</div>
+<br>
+
+<div class="row1">
+  <div class="column1">
+    <div class="card">
+      <img src="https://t4.ftcdn.net/jpg/00/84/67/19/360_F_84671939_jxymoYZO8Oeacc3JRBDE8bSXBWj0ZfA9.jpg" alt="Jane">
+      <div class="container">
+        <h2>Prof. Amrita Banerjee</h2>
+        <p>Teaches Computer Organization & Architecture To STEM</p>
+        <p>amrita.banerjeevisfac@svkmmumbai.onmicrosoft.com</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="https://t4.ftcdn.net/jpg/00/84/67/19/360_F_84671939_jxymoYZO8Oeacc3JRBDE8bSXBWj0ZfA9.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Prof. Chandravadan Prajapati</h2>
+        <p>Teaches Software Engineering To STEM</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+          x.className += " responsive";
+      } else {
+          x.className = "navbar";
+      }
+  }
+  </script>
+</body>
+</html>
