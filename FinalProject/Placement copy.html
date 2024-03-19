@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #show{
+        display: none;
+    }
+    .h1{
+        width:calc(100% - 670px);
+        transform-origin: 20px;
+        border: 3px solid rgba(255, 0, 0, 0.881);
+        transform: rotate(90deg);
+        position: relative;
+        z-index: -999; 
+    }
+    .h2{
+        width: 100%;
+        top: 10px;
+        left: 1px;
+        position: relative;
+        border: 3px solid rgba(175, 175, 175, 0.881);
+        z-index: -999; 
+    }
+    .info{
+        position: relative;
+        top: 40px;
+        left: 40px;
+    }
+    p,li{
+        width: 90%;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    div#\31,#\32,#\33,#\34,#\35,#\36,#\37,#\38,#\39,#\31 0,#\31 1{
+        width: 70%;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: lightgray;
+    }
+    .info img{
+        width: auto;
+        height: 500px;
+      transform-origin: 50%;
+    }
+    header{
+        padding: 0 15px;
+        background:#ffff;
+        border-bottom-right-radius:20px;
+        border-bottom-left-radius:20px;
+
+    }
+    .logo img{
+        width:220px;
+    }
+    .menu{
+        float: right;
+        position: relative;
+        top: -60px;
+        margin-right: 10px;
+    }
+    .menu a{
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: 19px;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/273eca_ef26c7f35aca4d64ae4d0d6d74f74927~mv2.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Clubs</a>
+            <a href="">Faculty</a>
+            <a href="">Placement</a>
+            <a href="">Login</a>
+        </div>
+    </header>
+    <hr class="h1">
+    <hr class="h2">
+    
+    <div class="info">
+    <div id="1">
+        <a id="p1">
+        <h4>Placement Overview</h4>
+        </a>
+        <div id="show1">
+            <img src="https://www.nmimsnavimumbai.org/images/NMIMS_Navi%20Mumbai_Final%20Placements_Interim%20Report_2022-23%20LinkedIn.jpg" alt="placement_img">
+        </div>
+    </div>
+    <script>
+        const collapseButton = document.getElementById('p1');
+             const collapseContainer = document.getElementById('show1');
+             collapseContainer.style.display = 'none';
+             collapseButton.addEventListener('click', () => {
+                 if (collapseContainer.style.display === 'none') {
+                     collapseContainer.style.display = 'block';
+                 } else {
+                     collapseContainer.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="2">
+        <a id="p2">
+            <h4>Placements at NMIMS Navi Mumbai</h4>
+            </a>
+            <div id="show2">
+                <p>At NMIMS Navi Mumbai, we incorporate the best global academic practices, which make our students thought leaders who can prove their mettle in the industry. Understanding the need for specialized schools in varied disciplines, NMIMS Navi Mumbai stands as the Global Campus, offering multiple disciplines through separate schools in Business Management, Technology Management & Engineering, Hospitality, Science, Commerce, and Law. Industrial visits, visits to rural regions, and academic workshops are conducted frequently to provide our students practical experience before they enter the corporate world. We aim to develop our students into Industry ready professionals by incorporating events like Guest lectures, workshops, internships, and live projects into their robust course curriculum.</p>
+                <p>The institute believes that holistic development is the distilled essence of our institutions corroborated by experience and practical learning. The intense academic curriculum is designed such that it prepares students to deliver their best. Our students undergo CSR experience through We Care - An NMIMS initiative in collaboration with NGOs to make them aware of their responsibilities towards society. Personal development programs like Integrated Yoga Practices & Power Yoga are organized in tandem with contemporary learning. Our eminent faculty members who nurture our management graduates develop industry-oriented and industry-relevant course content. In addition, we invite senior executives from the corporate world to ensure that students are provided with the right mix of theory and real-world issues.</p>
+            </div>
+    </div>
+    <script>
+        const collapseButton1 = document.getElementById('p2');
+             const collapseContainer1 = document.getElementById('show2');
+             collapseContainer1.style.display = 'none';
+             collapseButton1.addEventListener('click', () => {
+                 if (collapseContainer1.style.display === 'none') {
+                     collapseContainer1.style.display = 'block';
+                 } else {
+                     collapseContainer1.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="3">
+        <a id="p3">
+            <h4>Placement Brochure</h4>
+            </a>
+            <div id="show3">
+                <a href="">Link to document1</a>
+                <a href="">Link to document2</a>
+                <a href="">Link to document3</a>
+            </div>
+    </div>
+    <script>
+        const collapseButton2 = document.getElementById('p3');
+             const collapseContainer2 = document.getElementById('show3');
+             collapseContainer2.style.display = 'none';
+             collapseButton2.addEventListener('click', () => {
+                 if (collapseContainer2.style.display === 'none') {
+                     collapseContainer2.style.display = 'block';
+                 } else {
+                     collapseContainer2.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="4">
+        <a id="p4">
+            <h4>Student's Profile</h4>
+            </a>
+            <div id="show4">
+                <h3>SBM</h3>
+                <hr>
+                <button>SBM Batch Profile 2021-23</button>
+                <br>
+                <button>SBM Batch Profile 2022-24</button>
+                <br>
+                <hr>
+                <h3>STME</h3>
+                <hr>
+                <button>B.Tech 2019-23</button><br>
+                <button>B.Tech 2020-24</button><br>
+                <button>MBA.Tech 2018-23</button><br>
+                <button>MBA.Tech 2019-24</button><br>
+                <button>MBA.Tech 2020-25</button><br>
+
+            </div>
+    </div>
+    <script>
+        const collapseButton3 = document.getElementById('p4');
+             const collapseContainer3 = document.getElementById('show4');
+             collapseContainer3.style.display = 'none';
+             collapseButton3.addEventListener('click', () => {
+                 if (collapseContainer3.style.display === 'none') {
+                     collapseContainer3.style.display = 'block';
+                 } else {
+                     collapseContainer3.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="5">
+        <a id="p5">
+            <h4>Participating Recruiters</h4>
+            </a>
+            <div id="show5">
+               ** <img src="https://www.nmimsnavimumbai.org/images/NMIMS_Navi%20Mumbai_Final%20Placements_Interim%20Report_2022-23%20LinkedIn.jpg" alt="placement_img">
+            </div>
+    </div>
+    <script>
+        const collapseButton4 = document.getElementById('p5');
+             const collapseContainer4 = document.getElementById('show5');
+             collapseContainer4.style.display = 'none';
+             collapseButton4.addEventListener('click', () => {
+                 if (collapseContainer4.style.display === 'none') {
+                     collapseContainer4.style.display = 'block';
+                 } else {
+                     collapseContainer4.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="6">
+        <a id="p6">
+            <h4>Live projects, Internships, and Final Placements</h4>
+            </a>
+            <div id="show6">
+                <p>Our students collaborate with various prestigious Corporates and work with them for specific durations to gain exposure to the corporate culture along with an experience of learning. As a compulsory part of the curriculum, SVKM’s NMIMS School of Business Management students are required to undergo Summer Internship with an organization for a period of 2-3 months. However, we encourage students to take up any number of live projects parallel to their academics during 2 years for their learning. SVKM’s NMIMS School of Business Management welcomes Corporates on board each year to engage with us through different avenues like competitions, events, live projects, summer internships, and ultimately the Final Placements. Each year, our industry-ready students with their exceptional hard work, talent, and perseverance make us proud with their saga of achievements and bag the best placement opportunities.</p>
+            </div>
+    </div>
+    <script>
+        const collapseButton5 = document.getElementById('p6');
+             const collapseContainer5 = document.getElementById('show6');
+             collapseContainer5.style.display = 'none';
+             collapseButton5.addEventListener('click', () => {
+                 if (collapseContainer5.style.display === 'none') {
+                     collapseContainer5.style.display = 'block';
+                 } else {
+                     collapseContainer5.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="7">
+        <a id="p7">
+            <h4>Recruiters Guidelines</h4>
+            </a>
+            <div id="show7">
+                <p>The Placements & Corporate Engagements (PCE) at SVKM’S NMIMS Navi Mumbai undertakes the campus placement activity.</p>
+                <p>Once an organization confirms its participation, the information provided by it is made available to the students. This is followed by the process of deciding the slots for the placement process for the respective organizations. This is done to ensure that the process goes on smoothly and with minimal logistical inconvenience. Once the slots are decided, the dates of the placement processes are fixed and the same will be communicated to the organizations.</p>
+                <p>Organizations are required to follow the following rules for placement process:</p>
+                <ul>
+                    <li>Organizations wishing to recruit students from the NMIMS Navi Mumbai Campus will have to communicate their interest for the same, by filling the NMIMS Placement Form. The filled-up placement form has to be sent by posting it to the specified address provided either in the placement brochure or by email to the Navi Mumbai Placements – nmimsnavimumbai.placements@nmims.edu</li>
+                    <li>The following details are used to allocate the slots: Job profile being offered, compensation and benefits, geographical location and mobility, number of positions offered, etc. The procedure for allocating slots for prospective recruiters during the placement process will be according to the convenience of both the parties and/or accommodated on mutually convenient days.</li>
+                    <li>The Placement process will comprise of:
+                        <ul>
+                            <li>Pre-Placement Talk (PPT). During the pre-placement talk, the recruiter will make a presentation about the organization, the job profile and respond to the queries of students.</li>
+                            <li>Collection and handling of CVs of interested candidates to the recruiter.</li>
+                            <li>Selection process by the recruiter.</li>
+                            <li>Handing over the list of selected candidates to the coordinator</li>
+                        </ul>
+                    </li>
+                    <li>Organization should confirm selection of students in writing before leaving NMIMS Navi Mumbai campus.</li>
+                    <li>NMIMS Navi Mumbai must receive the appointment letters of the selected students within seven days of the selection process.</li>
+                    <li>All organizations are requested to prepare a waiting list, in addition to the list of students selected for recruitment.</li>
+                    <li>No one-to-one interaction by the recruiter is allowed with the candidate before the final selection.
+                    </li>
+                </ul>
+                <br>
+                <p>Any communication regarding the placements should be made only with the Placement Coordinator or Student Coordinators mentioned in the brochure</p>
+
+            </div>
+    </div>
+    <script>
+        const collapseButton6 = document.getElementById('p7');
+             const collapseContainer6 = document.getElementById('show7');
+             collapseContainer6.style.display = 'none';
+             collapseButton6.addEventListener('click', () => {
+                 if (collapseContainer6.style.display === 'none') {
+                     collapseContainer6.style.display = 'block';
+                 } else {
+                     collapseContainer6.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="8">
+        <a id="p8">
+            <h4>MAVEN TALKS</h4>
+            </a>
+            <div id="show8">
+                <p>The Placement Committee of NMIMS Navi Mumbai conducts a series of activities that takes place all year round under Maven Talks. These include conducting guest webinars, corporate workshops, alumni relations, pre-placement talks and batch preparations. The theme for this year’s webinar series is Maven Talks 2.0 - CEO Series, where we invite the distinguished CEOs of various companies from diverse industry domains as our guest speakers. Every Maven Talks session holds immense value and an exceptional opportunity for our students to interact and learn from such industry leaders who guide and enlighten the students from their vast pool of experience and expertise.</p>
+            </div>
+    </div>
+    <script>
+        const collapseButton7 = document.getElementById('p8');
+             const collapseContainer7 = document.getElementById('show8');
+             collapseContainer7.style.display = 'none';
+             collapseButton7.addEventListener('click', () => {
+                 if (collapseContainer7.style.display === 'none') {
+                     collapseContainer7.style.display = 'block';
+                 } else {
+                     collapseContainer7.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="9">
+        <a id="p9">
+            <h4>Placement Reports</h4>
+            </a>
+            <div id="show9">
+                **
+            </div>
+    </div>
+    <script>
+        const collapseButton8 = document.getElementById('p9');
+             const collapseContainer8 = document.getElementById('show9');
+             collapseContainer8.style.display = 'none';
+             collapseButton8.addEventListener('click', () => {
+                 if (collapseContainer8.style.display === 'none') {
+                     collapseContainer8.style.display = 'block';
+                 } else {
+                     collapseContainer8.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="10">
+        <a id="p10">
+            <h4>Placement Committee Members</h4>
+            </a>
+            <div id="show10">
+                <img src="https://www.nmimsnavimumbai.org/images/Placement-Team.jpg" alt="placement_member_img">
+                <table>
+                   <tr>
+                    <td>Name</td>
+                    <td>E-mail</td>
+                   </tr> 
+                   <tr>
+                    <td>Apeksha Chaudhari</td>
+                    <td>apeksha.chaudhari245@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Abhishek Choudhary</td>
+                    <td>abhishek.choudhary158@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Pranay Wadhava</td>
+                    <td>pranay.wadhava351@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Aarya Joshi	</td>
+                    <td>aarya.joshi392@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Shresti Ande</td>
+                    <td>shresti.ande485@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Abhishek Garade	</td>
+                    <td>abhishek.garade039@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Anandapadmanabhan VP</td>
+                    <td>anandapadmanabhan.vp112@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Shruti Bhatt</td>
+                    <td>shruti.bhatt138@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Yogvardhan Singh Chouhan</td>
+                    <td>yogvardhansingh.chouhan110@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Piyush Punjabi</td>
+                    <td>piyush.punjabi603@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Saharsh Jhawar</td>
+                    <td>saharsh.jhawar258@nmims.edu.in</td>
+                   </tr>
+                   <tr>
+                    <td>Malkissa Machado</td>
+                    <td>malkissa.machado114@nmims.edu.in</td>
+                   </tr>
+                </table>
+            </div>
+    </div>
+    <script>
+        const collapseButton9 = document.getElementById('p10');
+             const collapseContainer9= document.getElementById('show10');
+             collapseContainer9.style.display = 'none';
+             collapseButton9.addEventListener('click', () => {
+                 if (collapseContainer9.style.display === 'none') {
+                     collapseContainer9.style.display = 'block';
+                 } else {
+                     collapseContainer9.style.display = 'none';
+                 }
+             }); 
+     </script>
+    <div id="11">
+        <a id="p11">
+            <h4>Contact Us – Placement Team</h4>
+            </a>
+            <div id="show11">
+                <p>The Placement Committee at NMIMS Navi Mumbai is a team committed to deliver excellence through determination, hard work, dedication and group effort. As a result, our campus has been achieving constant growth in its placement records and is fully supported by our Director, Associate Dean, Faculty and Staff members.</p>
+                <p>The placement cell is very active and works throughout the year through various activities for uplifting placement batches to help our students pursue their passion and become industry ready. ‘Together we succeed’ is our motto and it is how we succeed in achieving stellar placement records.</p>
+                <p>My sincere appreciation goes out to our recruiters who played a huge role in our previous batches' success. Our aim is to continually expand our network of recruiters and establish mutually beneficial and lasting relationships with our corporate connections. With immense pleasure, I would like to invite our recruiters for the Placements Season 2021-2022.</p>
+                
+                
+            </div>
+    </div> 
+    <script>
+        const collapseButton10 = document.getElementById('p11');
+             const collapseContainer10 = document.getElementById('show11');
+             collapseContainer10.style.display = 'none';
+             collapseButton10.addEventListener('click', () => {
+                 if (collapseContainer10.style.display === 'none') {
+                     collapseContainer10.style.display = 'block';
+                 } else {
+                     collapseContainer10.style.display = 'none';
+                 }
+             }); 
+     </script>
+     </div>
+</body>
+</html>
