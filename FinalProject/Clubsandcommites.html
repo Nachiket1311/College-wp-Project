@@ -34,9 +34,16 @@
         background-color: black;
         width: 200px;
         background-position: right;
-        float: left;
-        border-radius: 30px;
         border-top-left-radius: 30px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 30px;
+    }
+    .club2 img{
+        background-color: black;
+        width: 90px;
+        background-position: right;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 20px;
         border-bottom-left-radius: 30px;
     }
 </style>
@@ -54,16 +61,37 @@
         </div>
     </header>
     <div class="main">
-        <div class="club1">
-            <a href="Clubs/TECHCIDER CLUB.html">
-            <img src="img/TechCider (white no_bg).png" alt="club1_img">
-        </a>
-        </div>
-        <div class="club2">
-            <a href="Clubs/Infinix.html">
-                <img src="img/infinix_logo1.png" alt="club1_img">
-            </a>
-        </div>    
+        <table border="1">
+            <tr>
+                <td>Logo</td>
+                <td>Name</td>
+                <td>Description</td>
+            </tr>
+            <tr>
+            <td>
+                <div class="club1">
+                    <a href="Clubs/TECHCIDER CLUB.html">
+                    <img src="img/TechCider (white no_bg).png" alt="club1_img">
+                </a>
+                </div>
+            </td>
+            <td>
+                <p>Techcider Club</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <div class="club2">
+                    <a href="Clubs/Infinix.html">
+                        <img src="img/infinix_logo1.png" alt="club1_img">
+                    </a>
+                </div>   
+            </td>
+            <td>
+                <p>Infinix Club</p>
+            </td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
