@@ -1,5 +1,5 @@
-var user=document.inp1.value;
-var pass=document.inp2.value;
+// var user=document.inp1.value;
+// var pass=document.inp2.value;
 var mysql = require('mysql');
             var express = require('express');
             var app= express()
@@ -15,13 +15,13 @@ var mysql = require('mysql');
             con.query(qur,function(err,result){
                 if(err)throw err; 
                 console.log(result);
-                function sub(){
+                var user="70472200139";
+                var pass="nachiket11"
                     if(user != result.username || pass != result.pass)
-                    if(err)throw err;
+                        {if(err)throw err;}
                     else
-                    console.log("match found");
+                    {console.log("match found");}
                     
                   
-                }
-              })
+                })
       });
