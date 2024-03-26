@@ -15,12 +15,12 @@ var mysql = require('mysql');
             con.query(qur,function(err,result){
                 if(err)throw err; 
                 console.log(result);
-                var user="70472200139";
-                var pass="nachiket11"
-                    if(user != result.username || pass != result.pass)
-                        {if(err)throw err;}
-                    else
-                    {console.log("match found");}
+                // var user="70472200139";
+                // var pass="nachiket11";
+                //     if(user != result.username || pass != result.pass)
+                //         {if(err)throw err;}
+                //     else
+                //     {console.log("match found");}
                     
                   
                 })
