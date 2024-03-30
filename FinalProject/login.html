@@ -82,7 +82,14 @@ margin-right: auto;
   font-size: 12px;
 }
 
-
+#submit{
+  border: transparent; 
+  background-color: transparent; 
+  color: white;
+}
+#submit:hover{
+  color: black;
+}
 .login-box form a {
   position: relative;
   display: inline-block;
@@ -267,20 +274,21 @@ margin-right: auto;
         <img src="https://static.wixstatic.com/media/273eca_9f45ad1584874f9c88555427efc142a9~mv2.jpg" alt="nmims-logo">
     </div>
         <h2>Login</h2>
-        <form name="loginForm" action="/" method="post" onsubmit=" validateForm()">
+        <form name="loginForm" action="/" method="POST" onsubmit=" validateForm()">
           <div class="user-box">
-            <input type="text" name="username" id="username" required="required" >
+            <input type="text" name="user" id="username" required="required" >
             <label>Username</label>
           </div>
           <div class="user-box">
-            <input type="password" name="password" id="password" required="required">
+            <input type="password" name="pass" id="password" required="required">
             <label>Password</label>
           </div>
+          <a>
             <span></span>
             <span></span>
             <span></span>
-            <span></span>
-            <input type="submit" value="submit">
+            <input type="submit" id="submit" value="submit">
+          </a>
         </form>
       </div>
       <script>
@@ -293,6 +301,7 @@ margin-right: auto;
             }
         }
         </script>
+        
       <script>
         function validateForm() {
             var username = document.forms["loginForm"]["username"].value;
